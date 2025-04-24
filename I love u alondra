@@ -18,9 +18,9 @@
       color: #ff69b4;
       margin-bottom: 30px;
     }
-    .kitty {
+    .kitty, .kitty-divider {
       width: 200px;
-      margin: 30px auto;
+      margin: 20px auto;
     }
     .message {
       background-color: #fff0f5;
@@ -55,9 +55,13 @@
     <p>Siempre que estoy contigo me siento demasiado feliz. Cuando pienso en ti o alguien me habla de ti, automáticamente una sonrisa se dibuja en mi rostro.</p>
   </div>
 
+  <img class="kitty-divider" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Hello_Kitty_%282005%29_logo.svg/320px-Hello_Kitty_%282005%29_logo.svg.png" alt="Hello Kitty Logo">
+
   <div class="message">
     <p>Gracias por ser mi rayito de sol en los días nublados. ¡Te amo, Alondra!</p>
   </div>
+
+  <img class="kitty-divider" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Hello_Kitty_1976.svg/320px-Hello_Kitty_1976.svg.png" alt="Hello Kitty Classic">
 
   <div class="message">
     <p>Si pudiera regalarte el mundo, lo envolvería con moños rosas y dulces, solo para verte sonreír.</p>
