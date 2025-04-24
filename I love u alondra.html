@@ -20,10 +20,14 @@
     }
 
     .mensaje {
-      font-size: 3em;
+      font-size: 2em;
       color: #ff66b2;
       margin: 20px auto;
       max-width: 90%;
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .kitty-img {
@@ -63,6 +67,7 @@
       0% { transform: translateY(0) scale(1); opacity: 1; }
       100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
     }
+
   </style>
 </head>
 <body>
@@ -81,7 +86,28 @@
     automáticamente una sonrisa se dibuja en mi rostro.
   </div>
 
-  <!-- Imágenes nuevas de Hello Kitty -->
-  <img src="https://i.pinimg.com/originals/9d/6d/ea/9d6dea132d16cf6595dbfdb53917a3b7.png" class="kitty-img" alt="Hello Kitty 1">
-  <img src="https://i.pinimg.com/originals/9f/0a/c8/9f0ac84952f7fd3bb177b87a5d3656b7.png" class="kitty-img" alt="Hello Kitty 2">
-  <img src="https://i.pinimg.com/originals/66/88/ff/6688ff97b1a835d7e65083577a04102b.png" class="kitty-img" alt="
+  <!-- Imágenes de Hello Kitty -->
+  <img src="https://i.pinimg.com/originals/6e/8b/c5/6e8bc5a0979b0a0ebc2081cf7ac8e8c1.png" class="kitty-img" alt="Hello Kitty 1">
+  <img src="https://i.pinimg.com/originals/d6/3e/d6/d63ed640e4a2e4b9ae29a9137d5cda3f.png" class="kitty-img" alt="Hello Kitty 2">
+  <img src="https://i.pinimg.com/originals/8d/80/cf/8d80cf79e07e6b2a35160fe2e2b354cc.png" class="kitty-img" alt="Hello Kitty 3">
+
+  <button onclick="lanzarCorazones()">Te amo</button>
+
+  <script>
+    function lanzarCorazones() {
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.top = '100vh';
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 4000);
+      }
+    }
+  </script>
+
+</body>
+</html>
