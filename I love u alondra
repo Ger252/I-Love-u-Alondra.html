@@ -12,12 +12,11 @@
       padding: 50px;
       opacity: 0;
       animation: fadeIn 2s forwards;
-      font-size: 1.4em;
     }
     h1 {
       font-size: 4em;
       color: #ff69b4;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     .kitty {
       width: 200px;
@@ -34,6 +33,8 @@
       opacity: 0;
       animation: fadeIn 2s forwards;
       animation-delay: 1s;
+      font-size: 3em;
+      line-height: 1.4;
     }
 
     @keyframes fadeIn {
